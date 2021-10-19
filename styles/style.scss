@@ -1,0 +1,25 @@
+.emailContainer{
+    margin: auto;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #1875cd;
+    .header-Title{
+        display: flex;
+        justify-content: flex-start;
+        color: white;
+        margin-right: 40px;
+    }
+    .header-Links{
+        display: flex;
+        justify-content: space-between;
+        a{
+            color: white;
+            text-decoration: none;
+            margin: 0px 10px;
+        }
+    }
+}
