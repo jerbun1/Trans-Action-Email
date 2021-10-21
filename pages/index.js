@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -11,36 +11,164 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
-    <table className="ouuterTable" style={{width: '100%', border:"0", cellspacing:"0", cellpadding:"0"}}>
-        <tr>
+        <table
+          className="ouuterTable"
+          style={{
+            width: "100%",
+            border: "0",
+            cellspacing: "0",
+            cellpadding: "0",
+          }}
+        >
+          <tr>
             <td>
-                <table className="innerTable" style={{margin:"0", width:"600px", border:"0", cellspacing:"0", cellpadding:"0"}}>
-                    {/* First Row */}
-                    <tr>
-                      <td>
-                          <header> 
-                            <div className="header-Title">
-                              <h1>Walmart</h1>
-                              <img src="https://cutewallpaper.org/21/walmart-logo-no-background/D-Cartoon-Icons-II-Windows-Restart-Walmart-logo-.jpg"/>
-                            </div>
+              <header>
+                      <div className="header-Title">
+                        <h1>Walmart</h1>
+                        <img
+                          className="walmart-logo"
+                          src="data:image/jpeg;base64,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"
+                        />
+                      </div>
 
-                            <div className="header-Links">
-                              <a href="#">Vist Walmart.com</a>
-                              <a href="#">Help</a>
-                              <a href="#">My Account</a>
-                            </div>
-
-                          </header>
-                      </td>
-                  </tr>
-                </table>
+                      <div className="header-Links">
+                        <a href="#">Vist Walmart.com</a>
+                        <a href="#">Help</a>
+                        <a href="#">My Account</a>
+                      </div>
+              </header>
             </td>
-        </tr>
-    </table>
-</body>
-
-      
+          </tr>
+          <tr>
+            <td>
+              <table
+                className="innerTable"
+                style={{
+                  margin: "0",
+                  width: "600px",
+                  border: "0",
+                  cellspacing: "0",
+                  cellpadding: "0",
+                }}
+              >
+                {/* First Row */}
+                <tr>
+                  <td>
+                    <div className="summary">
+                    <h1>Hi</h1>
+                    <p>Thanks for ordering from Walmart.com, Here's a summary of your order.</p>
+                    </div>
+                  </td>
+                </tr>
+                {/* Second Row */}
+                <tr>
+                  <td>
+                      <div className="pickUp">
+                        {/* Place package logo */}
+                        <div className="left-side">
+                          <h1>Pickup</h1>
+                          <h2>We'll send an<br/> email/text message<br/> when your order is<br/> ready for pickup.</h2>
+                        </div>
+                        <div className="right-side">
+                          <p>Pickup  person: <a href="#"><b>Add or edit</b></a></p>
+                          <h3>Lauren Smith</h3>
+                          <p>Mobile number (optional):<a href="#"><b>Edit</b></a></p>
+                          <h3>Not entered.</h3>
+                          <p>Pickup Address:</p>
+                          <h3>6 Glamorgan Ave<br/> Aprt 409 Canada, <br/>ON B7G 3J7</h3>
+                        </div>
+                      </div>
+                  </td>
+                </tr>
+                {/* Third Row */}
+                <tr>
+                  <td>
+                    <div className="third-Row">
+                      <h3>Walmart.com order number: <b>4584621-5123651</b></h3>
+                    </div>
+                  </td>
+                </tr>
+                {/* Fourth Row */}
+                <tr>
+                  <td>
+                      <div className="items-Info">
+                        {/* Place package logo */}
+                        <div className="in-store-title">
+                          <h1>Pickup in store</h1>
+                        </div>
+                        <div className="store-Items">
+                          <div className="store-Items-info">
+                            <div className="items-LeftSide">
+                            <p>Item</p>
+                            </div>
+                            <div className="items-RightSide">
+                            <p>Qty</p>
+                            <p>Price</p>
+                            <p>Total</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="store-Items-Price">
+                          <div className="items-LeftSide">
+                            <p>Sauder Beginnings Student Desk,<br/> Cinnamon Cherry</p>
+                            <b>Ready for pickup starting Thur, Jul 31</b>
+                          </div>
+                          <div className="items-RightSide">
+                            <p>1</p>
+                            <p>$49.00</p>
+                            <p>$49.00</p>
+                          </div>
+                        </div>
+                        <div className="store-Items-Totals">
+                          <div className="items-LeftSide">
+                            <p>See our <a href="#"><b>Return Policy</b></a> of <br/> contact <a href="#"><b>Customer Service</b></a>.</p>
+                          </div>
+                          <div className="items-RightSide">
+                            <div className="pricing-Totals">
+                              <p>Subtotal :</p>
+                              <p>Shipping :</p>
+                              <p>Tax :</p>
+                              <p>Order total :</p>
+                            </div>
+                            <div className="prices">
+                              <p>$49.00</p>
+                              <p style={{color: "#9f272b", fontWeight: "700"}}>Free</p>
+                              <p>$3.06</p>
+                              <p style={{color: "#9f272b", fontWeight: "700"}}>$52.06</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </td>
+                </tr>
+                {/* Fifth Row */}
+                <tr>
+                  <td>
+                      <div className="billing-Info">
+                        {/* Place package logo */}
+                        <div className="billing-title">
+                          <h1>Billing Information</h1>
+                        </div>
+                        <div className="billing-payment">
+                          <div className="billing-address">
+                            <h3>Billing address:</h3>
+                            <p>6 Glamorgan Ave<br/> Aprt 409 Canada, <br/>ON B7G 3J7</p>
+                          </div>
+                          <div className="billing-method">
+                            <h3>Payment method</h3>
+                            <p>VISA E-transfer</p>
+                          </div>
+                        </div>
+                        <p><b>If paying by credit card or Bill Me Later</b> your account will not be charged until your order shop. If you see a pending charge on your account prior to shipping this is an authorization hold to ensure the funds are available.</p>
+                        
+                      </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </body>
     </div>
-    
-  )
+  );
 }

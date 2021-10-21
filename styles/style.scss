@@ -1,25 +1,179 @@
 .emailContainer{
     margin: auto;
 }
+// Header Section 
 header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
     background: #1875cd;
     .header-Title{
         display: flex;
         justify-content: flex-start;
         color: white;
-        margin-right: 40px;
+        padding-left: 15px;
+        .walmart-logo{
+            position: relative;
+            top: 10px;
+            height: 60px;
+            width: 60px;
+        }
     }
     .header-Links{
         display: flex;
-        justify-content: space-between;
         a{
             color: white;
             text-decoration: none;
             margin: 0px 10px;
         }
+    }
+}
+//First Row
+.summary{
+    padding: 0px 15px;
+    h1{
+        color:#df7d2d;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+}
+//Second Row Pickup
+.pickUp{
+    display: flex;
+    justify-content: space-between;
+    background: #e5f0f6;
+    padding: 10px;
+    .left-side{
+        padding: 10px;
+        h1{
+            color:#df7d2d;
+        }
+    }
+    .right-side{
+        border-left: 1px dotted black;
+        padding: 15px;
+        p{
+            margin-bottom: 0;
+        }
+        h3{
+            margin-top: 0;
+            font-weight: 600;
+        }
+        a{
+            text-decoration: none;
+        }
+        b{
+            color: #0651a1;
+        }
+    }
+}
+
+// Third Row
+.third-Row{
+    h3{
+        font-weight: 388;
+        b{
+            color: #0651a1;
+        }
+    }
+}
+
+// Fourth Row
+.items-Info{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    .in-store-title{
+        color:#df7d2d;
+    }
+    .store-Items{
+        .store-Items-info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px dotted black;
+            .items-RightSide{
+                display: flex;
+                p{
+                    margin: 0px 20px;
+                }
+            }
+        }
+    }
+    .store-Items-Price{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .items-RightSide{
+            display: flex;
+            margin: 10px;
+            p{
+                margin: 0px 15px;
+            }
+        }
+    }
+    .store-Items-Totals{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px dotted black;
+        .items-LeftSide{
+            a{
+                text-decoration: none;
+            }
+            b{
+                color: #0651a1;
+                font-weight: 600;
+            }
+        }
+        .items-RightSide{
+            display: flex;
+            margin-right: 20px;
+            .pricing-Totals{
+                margin-right: 10px;
+                p{
+                    font-size: 1.17rem;
+                }
+            }
+            .prices{
+                font-size: 1.17rem;
+            }
+        }
+    }
+}
+// Fifth Row
+.billing-Info{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    .billing-title{
+        color:#df7d2d;
+    }
+    .billing-payment{
+        display: flex;
+        justify-content: space-between;
+        .billing-address{
+            width: 200px;
+            padding-left: 25px;
+            border-right: 1px dotted black;
+            padding-right: 50px;
+            p{
+                padding:0;
+                margin: 0;
+            }
+        }
+        .billing-method{
+            width: 200px;
+            justify-content: space-between;
+            p{
+                padding:0;
+                margin: 0;
+            }
+        }
+    }
+    p{
+        padding: 15px;
     }
 }
