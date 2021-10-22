@@ -1,5 +1,6 @@
-.emailContainer{
-    margin: auto;
+
+body{
+    background: white;
 }
 // Header Section 
 header{
@@ -84,6 +85,8 @@ header{
     border: 1px solid black;
     border-radius: 10px;
     padding: 15px;
+    width: 80%;
+    margin: auto;
     .in-store-title{
         color:#df7d2d;
     }
@@ -146,8 +149,10 @@ header{
 .billing-Info{
     border: 1px solid black;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 15px;
+    width: 80%;
+    margin: auto;
     .billing-title{
         color:#df7d2d;
     }
@@ -177,3 +182,41 @@ header{
         padding: 15px;
     }
 }
+
+@media only screen and (min-width: 600px){
+    header{
+        width: 100%;
+    }
+  
+}
+@media only screen and (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+    body{
+        margin: 0;
+        width: 100%;
+    }
+    .outerTable{
+        width: 100%;
+    }
+    .innerTable{
+        width: 100%;
+        tr{
+            width: 100%;
+        }
+        header{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .header-Links{
+                position: relative;
+            }
+        }
+    }
+   
+  
+}
+  

@@ -117,4 +117,11 @@
     width: 100%;
     flex-direction: column;
   }
+  .container{
+    border: none;
+    padding: 0;
+  }
+  .outerTable{
+    width: 100%;
+  }
 }
