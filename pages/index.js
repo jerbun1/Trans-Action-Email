@@ -57,7 +57,7 @@ export default function Home() {
                   <td>
                     <div className="summary">
                     <h1>Hi</h1>
-                    <p>Thanks for ordering from Walmart.com, Here's a summary of your order.</p>
+                    <p>Thanks for ordering from Walmart.com, Here is a summary of your order.</p>
                     </div>
                   </td>
                 </tr>
@@ -68,7 +68,7 @@ export default function Home() {
                         {/* Place package logo */}
                         <div className="left-side">
                           <h1>Pickup</h1>
-                          <h2>We'll send an<br/> email/text message<br/> when your order is<br/> ready for pickup.</h2>
+                          <h2>We will send an<br/> email/text message<br/> when your order is<br/> ready for pickup.</h2>
                         </div>
                         <div className="right-side">
                           <p>Pickup  person: <a href="#"><b>Add or edit</b></a></p>
